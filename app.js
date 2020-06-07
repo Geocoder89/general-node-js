@@ -7,6 +7,8 @@ const PORT = 3000;
 
 const errorController = require('./controllers/error')
 
+const db = require('./util/database')
+
 // this is the configuration to initialize express handlebars
 // app.engine('hbs',expressHbs({
 //     layoutsDir:'views/layouts/',defaultLayout:'main-layout',
@@ -28,6 +30,7 @@ const adminRoutes = require('./routes/admin')
 const shopRoutes = require('./routes/shop');
 
 const errorRoutes = require('./routes/error');
+
 
 // third party packages set up
 // this is a package to parse our incoming requests
